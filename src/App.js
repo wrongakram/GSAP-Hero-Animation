@@ -2,8 +2,8 @@ import React, {useEffect, useRef} from "react";
 import "./App.scss";
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
 
-import imgGirl from "./images/girl.jpg";
-import imgBoy from "./images/boy.jpg";
+import imgGirl from "./images/girl.webp";
+import imgBoy from "./images/boy.webp";
 import arrow from './images/arrow-right.svg'
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
       y: 44,
       ease:Power3.easeOut,
       delay: .8
-    }, .1, 'Start')
+    }, .15, 'Start')
     .from(contentP, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
-    .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
+    .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
 
   }, [tl])
 
